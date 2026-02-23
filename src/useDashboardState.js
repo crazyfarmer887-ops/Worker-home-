@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 //   https://your-vps-domain.com/dashboard/state
 // Locally, you can run dashboard-server.js (see below) on port 4001.
 
-const DEFAULT_ENDPOINT = import.meta.env.VITE_STATE_ENDPOINT || 'http://127.0.0.1:4001/state';
+const DEFAULT_ENDPOINT = import.meta.env.VITE_STATE_ENDPOINT || '/api/state';
 
 export default function useDashboardState() {
   const [state, setState] = useState(null);
